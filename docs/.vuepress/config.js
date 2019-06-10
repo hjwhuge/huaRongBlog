@@ -1,6 +1,6 @@
 module.exports = {
     // 部署的时候需要用到
-    base:'/blog/',
+    base:'/huaRongBlog/',
     // dest: './docs/.vuepress/dist',
     title: '我的博客',
     description: '我的博客',
