@@ -1,3 +1,16 @@
-# 前言
-**之前一直有想法弄一个个人博客，可是感觉工作量巨大，顿时无从下手，正好在第三届vueconf大会上，听到真山同学分享的vuepress1.x，虽然没有使用过0.x，我还是觉得直接来搞一搞：**
-# 准备工作
+---
+index: false
+icon: creative
+category:
+  - 使用指南
+---
+
+# 主要功能与配置演示
+
+- [页面展示](page.md)
+
+- [Markdown 展示](markdown.md)
+
+- [禁用展示](disable.md)
+
+- [加密展示](encrypt.md)
