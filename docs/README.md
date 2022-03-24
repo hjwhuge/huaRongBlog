@@ -5,23 +5,28 @@ icon: home
 title: 博客主页
 heroImage: /logo.svg
 heroText: huarongBlog
-heroFullScreen: true
+heroFullScreen: false
 tagline: 花荣技术博客
 projects:
   - icon: project
-    name: 项目名称
-    desc: 项目详细描述
-    link: https://你的项目链接
+    name: myzheye
+    desc: 仿知乎-前端（Vue3 + Ts）
+    link: https://github.com/hjwhuge/myzheye
 
-  - icon: link
-    name: 链接名称
-    desc: 链接详细描述
-    link: https://链接地址
+  - icon: project
+    name: myzheye-service
+    desc: 仿知乎-后端（Egg）
+    link: https://github.com/hjwhuge/myzheye-service
 
-  - icon: book
-    name: 书籍名称
-    desc: 书籍详细描述
-    link: https://你的书籍链接
+  - icon: project
+    name: chat-demo
+    desc: node websocket简单实现局域网在线聊天
+    link: https://github.com/hjwhuge/chat-demo
+
+  - icon: /logo.svg
+    name: awesome-algorithm-js
+    desc: 数据结构与算法学习
+    link: https://github.com/hjwhuge/awesome-algorithm-js
 
   - icon: article
     name: 文章名称
@@ -33,16 +38,5 @@ projects:
     desc: 伙伴详细介绍
     link: https://你的伙伴链接
 
-  - icon: /logo.svg
-    name: 自定义项目
-    desc: 自定义详细介绍
-    link: https://你的自定义链接
-
-footer: 自定义你的页脚文字
+footer: 自定义你的页脚文字,这是一个博客主页。
 ---
-
-这是一个博客主页。
-
-要使用此布局，你应该在页面前端设置 `layout: Blog` 和 `home: true`。
-
-相关配置文档请见 [博客主页](https://vuepress-theme-hope.github.io/v2/zh/guide/blog/home/)。

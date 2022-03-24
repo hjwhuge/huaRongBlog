@@ -12,6 +12,8 @@ features:
     details: 内容来源于HCY vue-design项目。
 ---
 
+# 原博客首页
+
 # Hello! 欢迎来到花荣的博客世界！
 
 - [vue-design](https://github.com/HcySunYang/vue-design)
