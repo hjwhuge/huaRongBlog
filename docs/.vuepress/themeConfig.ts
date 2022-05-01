@@ -6,8 +6,8 @@ export default defineThemeConfig({
   hostname: "https://vuepress-theme-hope-v2-demo.mrhope.site",
 
   author: {
-    name: "Mr.Hope",
-    url: "https://mrhope.site",
+    name: "Mr.HuaRong",
+    url: "https://hjwhuge.github.io/huaRongBlog/",
   },
 
   iconPrefix: "iconfont icon-",
