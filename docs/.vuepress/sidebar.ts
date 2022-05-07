@@ -1,9 +1,6 @@
 import { defineSidebarConfig } from "vuepress-theme-hope";
 
 export default defineSidebarConfig([
-  "",
-  "home",
-  "slide",
   {
     text: "如何使用",
     icon: "creative",
@@ -12,41 +9,36 @@ export default defineSidebarConfig([
     children: "structure",
   },
   {
-    text: "文章",
+    text: "JavaScript专题",
+    icon: "note",
+    prefix: "javascript/",
+    children: [
+      {
+        text: "手写xxxx",
+        icon: "note",
+        collapsable: true,
+        prefix: "write/",
+        children: ["handwritingCallApplyBind", "plan"],
+      },
+    ],
+  },
+  {
+    text: "vue技术",
+    icon: "note",
+    prefix: "vue/",
+    children: ["vue-get-div-height", "vue-prd-del-console"],
+  },
+  {
+    text: "其他",
     icon: "note",
     prefix: "posts/",
     children: [
-      {
-        text: "vue技术",
-        icon: "note",
-        collapsable: true,
-        prefix: "vue/",
-        children: ["vue-get-div-height", "vue-prd-del-console"],
-      },
       {
         text: "文章 1-4",
         icon: "note",
         collapsable: true,
         prefix: "article/",
         children: ["article1", "article2", "article3", "article4"],
-      },
-      {
-        text: "文章 5-12",
-        icon: "note",
-        children: [
-          {
-            text: "文章 5-8",
-            icon: "note",
-            collapsable: true,
-            prefix: "article/",
-            children: ["article5", "article6", "article7", "article8"],
-          },
-          {
-            text: "文章 9-12",
-            icon: "note",
-            children: ["article9", "article10", "article11", "article12"],
-          },
-        ],
       },
     ],
   },

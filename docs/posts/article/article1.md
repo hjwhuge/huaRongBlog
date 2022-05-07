@@ -2,7 +2,7 @@
 icon: edit
 date: 2022-01-01
 category:
-  - CategoryA
+  - Article
 tag:
   - tag A
   - tag B
@@ -12,7 +12,7 @@ tag:
 
 ## 标题 2
 
-这里是内容。
+这里是内容
 
 ### 标题 3
 

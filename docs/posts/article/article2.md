@@ -2,7 +2,7 @@
 icon: edit
 date: 2022-01-02
 category:
-  - CategoryA
+  - Article
 tag:
   - tag A
   - tag B

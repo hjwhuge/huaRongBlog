@@ -2,7 +2,7 @@
 home: true
 layout: Blog
 icon: home
-title: 博客主页
+title: Home
 heroImage: /logo.svg
 heroText: huarongBlog
 heroFullScreen: false
@@ -28,15 +28,5 @@ projects:
     desc: 数据结构与算法学习
     link: https://github.com/hjwhuge/awesome-algorithm-js
 
-  - icon: article
-    name: 文章名称
-    desc: 文章详细描述
-    link: https://你的文章链接
-
-  - icon: friend
-    name: 伙伴名称
-    desc: 伙伴详细介绍
-    link: https://你的伙伴链接
-
-footer: 自定义你的页脚文字,这是一个博客主页。
+footer: 这是页脚。
 ---
