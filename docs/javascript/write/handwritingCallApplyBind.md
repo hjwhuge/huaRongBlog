@@ -4,6 +4,7 @@ category:
   - JavaScript
 tag:
   - JS
+  - write
 ---
 
 # 手写 apply，call，bind
