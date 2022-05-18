@@ -20,28 +20,16 @@ tag:
 ### 代码实现
 
 ```javascript
-function New(func) {
-  var res = {};
-  if (func.prototype !== null) {
-    res.__proto__ = func.prototype;
-  }
-  var ret = func.apply(res, Array.prototype.slice.call(arguments, 1));
-  if ((typeof ret === "object" || typeof ret === "function") && ret !== null) {
-    return ret;
-  }
-  return res;
-}
-var obj = New(A, 1, 2);
-// equals to
-var obj = new A(1, 2);
-```
-
-```javascript
-function create() {
+function New() {
+  // 创建一个空对象
   let obj = {};
+  // 获取构造函数，代码含义：删除并拿到arguments的第一项
   let Con = [].shift.call(arguments);
+  // 设置空对象的原型
   obj.__proto__ = Con.prototype;
+  // 绑定 this 并执行构造函数
   let result = Con.apply(obj, arguments);
+  // 确保返回值为对象
   return result instanceof Object ? result : obj;
 }
 ```
