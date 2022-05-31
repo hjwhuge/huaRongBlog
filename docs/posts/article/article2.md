@@ -5,7 +5,6 @@ category:
   - Article
 tag:
   - tag A
-  - tag B
 star: true
 ---
 

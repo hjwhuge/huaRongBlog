@@ -3,8 +3,7 @@ date: 2022-05-07
 category:
   - JavaScript
 tag:
-  - JS
-  - write
+  - writeJs
 ---
 
 # 手写 apply，call，bind
