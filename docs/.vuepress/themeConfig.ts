@@ -59,10 +59,10 @@ export default defineThemeConfig({
     // 你也可以使用 Waline
     comment: {
       type: "giscus",
-      repo: "vuepress-theme-hope/giscus-discussions",
-      repoId: "R_kgDOG_Pt2A",
+      repo: "hjwhuge/blog-giscus",
+      repoId: "R_kgDOHbdzfA",
       category: "Announcements",
-      categoryId: "DIC_kwDOG_Pt2M4COD69",
+      categoryId: "DIC_kwDOHbdzfM4CPZxj",
     },
 
     mdEnhance: {
@@ -72,4 +72,6 @@ export default defineThemeConfig({
       },
     },
   },
+
+  editLink: false,
 });
