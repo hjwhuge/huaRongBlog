@@ -35,10 +35,6 @@ export default defineThemeConfig({
     intro: "/intro.html",
     medias: {
       GitHub: "https://github.com/hjwhuge",
-      Gitee: "https://github.com/hjwhuge",
-      Gitlab: "https://github.com/hjwhuge",
-      Linkedin: "https://github.com/hjwhuge",
-      Twitter: "https://github.com/hjwhuge",
       Wechat: "https://github.com/hjwhuge",
       Weibo: "https://github.com/hjwhuge",
       Zhihu: "https://github.com/hjwhuge",

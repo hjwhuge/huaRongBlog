@@ -19,9 +19,9 @@ projects:
     link: https://github.com/hjwhuge/myzheye-service
 
   - icon: project
-    name: chat-demo
-    desc: node websocket简单实现局域网在线聊天
-    link: https://github.com/hjwhuge/chat-demo
+    name: web-cli
+    desc: 前端脚手架工具
+    link: https://github.com/hjwhuge/web-cli
 
   - icon: /logo.svg
     name: awesome-algorithm-js
