@@ -14,13 +14,26 @@ export default defineSidebarConfig([
     prefix: "javascript/",
     children: [
       {
-        text: "手写xxxx",
+        text: "基础",
+        icon: "note",
+        collapsable: true,
+        prefix: "base/",
+        children: ["prototype", "scope", "this"],
+      },
+      {
+        text: "手写xx",
         icon: "note",
         collapsable: true,
         prefix: "write/",
         children: ["callApplyBind", "instanceof", "plan"],
       },
     ],
+  },
+  {
+    text: "TypeScript专题",
+    icon: "note",
+    prefix: "typescript/",
+    children: ["base", "challenge"],
   },
   {
     text: "vue技术",
