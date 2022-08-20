@@ -15,7 +15,7 @@ yarn start
 # 发布到 github
 
 ```
-双击运行根目录下的 deploy.sh
+运行根目录下的 deploy.sh
 ```
 
 - [vuepress 官网](https://v1.vuepress.vuejs.org/zh/)
