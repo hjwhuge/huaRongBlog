@@ -25,7 +25,7 @@ export default defineSidebarConfig([
         icon: "note",
         collapsable: true,
         prefix: "write/",
-        children: ["callApplyBind", "instanceof", "plan"],
+        children: ["callApplyBind", "instanceof", "debounceThrottle"],
       },
     ],
   },

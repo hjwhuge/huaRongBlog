@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 300px;
+        height: 300px;
+        background: #58bc58;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+  <script>
+    function throttle(func, wait) {
+      console.log("throttle", arguments);
+      let pre = 0;
+      return function (...args) {
+        // console.log("args", args);
+        const now = Date.now();
+        if (now - pre > wait) {
+          func.apply(this, args);
+          pre = now;
+        }
+      };
+    }
+
+    function throttle1(func, wait) {
+      let pre = 0;
+      let timer = null;
+      return function (...args) {
+        const now = Date.now();
+        if (now - pre > wait) {
+          if (timer) {
+            clearTimeout(timer);
+            timer = null;
+          }
+          pre = now;
+          console.log("Date");
+          func.apply(this, args);
+        } else if (!timer) {
+          timer = setTimeout(() => {
+            console.log("timer");
+            func.apply(this, args);
+          }, wait);
+        }
+      };
+    }
+
+    const box = document.querySelector(".box");
+    let moveCount = 0;
+    const params = "我是参数";
+    const hadleMouseMove = function (params) {
+      moveCount++;
+      console.log(moveCount, Date.now(), params);
+      box.innerHTML = moveCount + "wo" + Date.now() + params;
+    };
+    // box.addEventListener("mousemove", hadleMouseMove.bind(box, params));
+    box.addEventListener(
+      "mousemove",
+      throttle(hadleMouseMove.bind(box, params), 1000)
+    );
+  </script>
+</html>

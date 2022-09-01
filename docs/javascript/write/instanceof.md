@@ -8,11 +8,11 @@ tag:
 
 # 手写 instanceof
 
-### instanceof 的原理是什么?
+### instanceof 原理简介
 
 instanceof 可以正确的判断对象的类型，因为内部机制是通过判断对象的原型链中是不是能找到类型的 prototype
 
-### 代码实现
+### instanceof 实现
 
 ```javascript
 function myInstanceof(left, right) {
