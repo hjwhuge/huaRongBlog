@@ -22,6 +22,37 @@ tag:
 
 ### 实现
 
+#### 基础版
+
+```js
+function debounce(func, wait) {
+  let timer = null;
+  return function (...args) {
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+      func.apply(this, args);
+    }, wait);
+  };
+}
+```
+
+#### 基础版 + 立即执行功能
+
+```js
+function debounce(func, wait, immediate) {
+  let timer = null;
+  return function (...args) {
+    clearTimeout(timer);
+    if (immediate && !timer) {
+      func.apply(this, args);
+    }
+    timer = setTimeout(() => {
+      func.apply(this, args);
+    }, wait);
+  };
+}
+```
+
 ## 节流（throttle）
 
 ### 定义
@@ -108,3 +139,12 @@ function throttle(func, wait) {
   };
 }
 ```
+
+## 常见问题
+
+- 修正 this 指向
+
+  - 如果不做任何处理，被防抖节流的函数中的 this 指向会改为执行 window。
+  - 在 debounce 函数中返回一个闭包，这里用的普通 function，里面的 setTimeout 则用的箭头函数，这样做的意义是让 this 的指向准确，this 的真实指向并非 debounce 的调用者，而是返回闭包的调用者。
+
+- 对传入闭包的参数进行透传。
