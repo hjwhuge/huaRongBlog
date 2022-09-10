@@ -19,6 +19,7 @@ export default defineSidebarConfig([
         collapsable: true,
         prefix: "base/",
         children: ["prototype", "scope", "this"],
+        children: ["prototype", "scope", "this", "EventLoop"],
       },
       {
         text: "手写xx",
