@@ -18,7 +18,6 @@ export default defineSidebarConfig([
         icon: "note",
         collapsable: true,
         prefix: "base/",
-        children: ["prototype", "scope", "this"],
         children: ["prototype", "scope", "this", "EventLoop"],
       },
       {
@@ -26,7 +25,12 @@ export default defineSidebarConfig([
         icon: "note",
         collapsable: true,
         prefix: "write/",
-        children: ["callApplyBind", "instanceof", "debounceThrottle"],
+        children: [
+          "callApplyBind",
+          "instanceof",
+          "debounceThrottle",
+          "deepCopy",
+        ],
       },
     ],
   },

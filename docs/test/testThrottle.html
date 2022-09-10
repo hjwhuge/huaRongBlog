@@ -18,38 +18,16 @@
     <div class="box"></div>
   </body>
   <script>
-    function throttle(func, wait) {
-      console.log("throttle", arguments);
-      let pre = 0;
-      return function (...args) {
-        // console.log("args", args);
-        const now = Date.now();
-        if (now - pre > wait) {
-          func.apply(this, args);
-          pre = now;
-        }
-      };
-    }
-
-    function throttle1(func, wait) {
-      let pre = 0;
+    function debounce(func, wait, immediate) {
       let timer = null;
       return function (...args) {
-        const now = Date.now();
-        if (now - pre > wait) {
-          if (timer) {
-            clearTimeout(timer);
-            timer = null;
-          }
-          pre = now;
-          console.log("Date");
+        clearTimeout(timer);
+        if (immediate && !timer) {
           func.apply(this, args);
-        } else if (!timer) {
-          timer = setTimeout(() => {
-            console.log("timer");
-            func.apply(this, args);
-          }, wait);
         }
+        timer = setTimeout(() => {
+          func.apply(this, args);
+        }, wait);
       };
     }
 
@@ -57,14 +35,15 @@
     let moveCount = 0;
     const params = "我是参数";
     const hadleMouseMove = function (params) {
+      console.log(this, params);
       moveCount++;
-      console.log(moveCount, Date.now(), params);
-      box.innerHTML = moveCount + "wo" + Date.now() + params;
+      // console.log(moveCount, params);
+      box.innerHTML = moveCount + params;
     };
-    // box.addEventListener("mousemove", hadleMouseMove.bind(box, params));
+    // box.addEventListener("mousemove", hadleMouseMove);
     box.addEventListener(
       "mousemove",
-      throttle(hadleMouseMove.bind(box, params), 1000)
+      debounce(hadleMouseMove.bind(this, params), 1000, true)
     );
   </script>
 </html>
