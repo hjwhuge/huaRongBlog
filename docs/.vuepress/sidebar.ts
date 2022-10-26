@@ -18,7 +18,14 @@ export default defineSidebarConfig([
         icon: "note",
         collapsable: true,
         prefix: "base/",
-        children: ["prototype", "scope", "this", "EventLoop", "inherit"],
+        children: [
+          "prototype",
+          "scope",
+          "this",
+          "EventLoop",
+          "inherit",
+          "curry",
+        ],
       },
       {
         text: "手写xx",
