@@ -25,6 +25,7 @@ export default defineSidebarConfig([
           "EventLoop",
           "inherit",
           "curry",
+          "closures",
         ],
       },
       {
