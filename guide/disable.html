@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="generator" content="VuePress 2.0.0-beta.36" />
+    <meta name="theme" content="VuePress Theme Hope" />
+    <meta property="og:url" content="https://vuepress-theme-hope-v2-demo.mrhope.site/huaRongBlog/guide/disable.html"><meta property="og:site_name" content="花荣博客"><meta property="og:title" content="组件禁用"><meta property="og:type" content="article"><meta property="og:locale" content="zh-CN"><meta property="article:tag" content="禁用"><link rel="stylesheet" href="//at.alicdn.com/t/font_2410206_mfj6e1vbwo.css"><title>组件禁用 | 花荣博客</title><meta name="description" content="花荣的个人博客">
+    <style>
+      :root {
+        --bg-color: #fff;
+      }
+
+      html[data-theme="dark"] {
+        --bg-color: #1d2025;
+      }
+
+      html,
+      body {
+        background-color: var(--bg-color);
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem("vuepress-theme-hope-scheme");
+      const systemDarkMode =
+        window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+      if (userMode === "dark" || (userMode !== "light" && systemDarkMode)) {
+        document.querySelector("html").setAttribute("data-theme", "dark");
+      }
+    </script>
+    <link rel="stylesheet" href="/huaRongBlog/assets/style.084ae0a7.css">
+    <link rel="modulepreload" href="/huaRongBlog/assets/app.c7499a6b.js"><link rel="modulepreload" href="/huaRongBlog/assets/disable.html.b08b1ce8.js"><link rel="modulepreload" href="/huaRongBlog/assets/disable.html.1d9ab541.js">
+  </head>
+  <body>
+    <div id="app"><!--[--><!--[--><!--[--><span tabindex="-1"></span><a href="#main-content" class="skip-link sr-only">Skip to content</a><!--]--><div class="theme-container no-navbar no-sidebar has-toc sidebar-open"><!----><!----><div class="toggle-sidebar-wrapper"><span class="arrow left"></span></div><aside class="sidebar"><!--[--><!----><!--]--><ul class="sidebar-links"></ul><!--[--><!----><!--]--></aside><!--[--><main class="page" id="main-content"><!----><nav class="breadcrumb disable"></nav><div class="page-title"><h1><i class="icon iconfont icon-config"></i>组件禁用</h1><!----><hr></div><div class="toc-place-holder"><aside id="toc-list"></aside></div><!----><div class="theme-hope-content"><!--[--><p>你可以通过设置页面的 Frontmatter，在页面禁用一些功能。</p><p>本页面应当禁用了:</p><ul><li>导航栏</li><li>侧边栏</li><li>路径导航</li><li>页面信息</li><li>贡献者</li><li>编辑此页链接</li><li>更新时间</li><li>上一篇/下一篇 链接</li><li>评论</li><li>页脚</li><li>返回顶部按钮</li></ul><!--]--></div><!----><footer class="page-meta"><!----><!----><!----></footer><!----><div class="giscus-wrapper input-top" style="display:none;"><!----></div><!----></main><!--]--><!----></div><!--]--><!----><!--[--><!-- Root element of PhotoSwipe. Must have class pswp. --><div class="pswp" tabindex="-1" role="dialog" aria-hidden="true"><!-- Background of PhotoSwipe. 
+    It’s a separate element, as animating opacity is faster than rgba().--><div class="pswp__bg"></div><!-- Slides wrapper with overflow:hidden. --><div class="pswp__scroll-wrap"><!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. --><div class="pswp__container"><!-- don’t modify these 3 pswp__item elements, data is added later on --><div class="pswp__item"></div><div class="pswp__item"></div><div class="pswp__item"></div></div><!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. --><div class="pswp__ui pswp__ui--hidden"><div class="pswp__top-bar"><!--  Controls are self-explanatory. Order can be changed. --><div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="关闭"></button><button class="pswp__button pswp__button--share" title="分享"></button><button class="pswp__button pswp__button--fs" title="切换全屏"></button><button class="pswp__button pswp__button--zoom" title="缩放"></button><!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR --><!-- element will get class pswp__preloader--active when preloader is running --><div class="pswp__preloader"><div class="pswp__preloader__icn"><div class="pswp__preloader__cut"><div class="pswp__preloader__donut"></div></div></div></div></div><div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"><div class="pswp__share-tooltip"></div></div><button class="pswp__button pswp__button--arrow--left" title="上一个 (左箭头)"></button><button class="pswp__button pswp__button--arrow--right" title="下一个 (右箭头)"></button><div class="pswp__caption"><div class="pswp__caption__center"></div></div></div></div></div><!--]--><!--]--></div>
+    <script type="module" src="/huaRongBlog/assets/app.c7499a6b.js" defer></script>
+  </body>
+</html>
